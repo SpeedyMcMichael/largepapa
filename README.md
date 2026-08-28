@@ -9,6 +9,8 @@ a kernel for UEFI-compatible machines (leverages limine)
 
 * preferably gcc
 
+* qemu (or real hardware if you want)
+
 ## build instructions
 
 MAKE COMMANDS:
@@ -24,3 +26,5 @@ ISO CREATION:
 `./iso.sh`
 
 _PLEASE_ RUN ISO CREATION UTIL AFTER MAKE
+
+Either flash onto external HDD via dd/rufus/balena or boot with qemu
