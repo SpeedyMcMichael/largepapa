@@ -1,4 +1,4 @@
-# `set` err handling for it make, curl, xorriso fail
+# `set` err handling for if make, curl, xorriso fail
 set -euo pipefail
 # Download the latest Limine binary release.
 curl -L https://github.com/Limine-Bootloader/Limine/releases/latest/download/limine-binary.tar.gz | gunzip | tar -xf -
