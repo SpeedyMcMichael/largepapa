@@ -20,7 +20,7 @@ make clean
 - cleans dir
 
 ```sh
-`make` 
+make 
 ```
 - compiles into keebler ELF
 
