@@ -28,3 +28,17 @@ ISO CREATION:
 _PLEASE_ RUN ISO CREATION UTIL AFTER MAKE
 
 Either flash onto external HDD via dd/rufus/balena or boot with qemu
+
+## plans (not in sequential order)
+
+* add MMU logic
+
+* add and flesh out userland
+
+* add syscall table
+
+* port ksh and tcc probably
+
+* add mandoc support + man pages 
+
+* shitpost in the kernel source
