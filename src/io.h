@@ -93,7 +93,7 @@ static inline char read_serial(void) {
     return (char)inb(COM1 + UART_DATA);
 }
 
-static inline void kprint_serial(const char *str) {
+static inline void serial_puts(const char *str) {
     while (*str) {
         if (*str == '\n')
             write_serial('\r');     /* terminals want CRLF */
