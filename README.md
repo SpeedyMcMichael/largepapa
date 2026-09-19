@@ -17,7 +17,7 @@ MAKE COMMANDS:
 
 `make clean` - cleans dir
 
-`make` - compiles into bzimage
+`make` - compiles into keebler ELF
 
 ISO CREATION:
 
