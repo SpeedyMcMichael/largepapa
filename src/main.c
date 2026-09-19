@@ -99,7 +99,9 @@ static void hcf(void) {
 // If renaming kmain() to something else, make sure to change the
 // linker script accordingly.
 void kmain(void) {
-    init_serial();
+    if (init_serial() != 0) {
+        hcf();
+    }
     serial_puts("[largepapa] UART COM1 init'd successfully :3\n");
 
     // Ensure the bootloader actually understands our base revision (see spec).
