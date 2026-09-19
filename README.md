@@ -14,14 +14,21 @@ a kernel for UEFI-compatible machines (leverages limine)
 ## build instructions
 
 MAKE COMMANDS:
+```sh
+make clean
+```
+- cleans dir
 
-`make clean` - cleans dir
-
-`make` - compiles into keebler ELF
+```sh
+`make` 
+```
+- compiles into keebler ELF
 
 ISO CREATION:
 
-`./iso.sh`
+```sh
+$ ./iso.sh
+```
 
 _PLEASE_ RUN ISO CREATION UTIL AFTER MAKE
 
