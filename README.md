@@ -11,6 +11,8 @@ a kernel for UEFI-compatible machines (leverages limine)
 
 * qemu (or real hardware if you want)
 
+* curl
+
 ## build instructions
 
 MAKE COMMANDS:
