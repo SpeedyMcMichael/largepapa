@@ -21,8 +21,6 @@ MAKE COMMANDS:
 
 ISO CREATION:
 
-`chmod +x iso.sh`
-
 `./iso.sh`
 
 _PLEASE_ RUN ISO CREATION UTIL AFTER MAKE
