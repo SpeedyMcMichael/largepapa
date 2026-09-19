@@ -100,7 +100,7 @@ static void hcf(void) {
 // linker script accordingly.
 void kmain(void) {
     init_serial();
-    kprint_serial("[largepapa] UART COM1 init'd successfully :3\n");
+    serial_puts("[largepapa] UART COM1 init'd successfully :3\n");
 
     // Ensure the bootloader actually understands our base revision (see spec).
     if (LIMINE_BASE_REVISION_SUPPORTED(limine_base_revision) == false) {
