@@ -136,4 +136,4 @@ obj/%.asm.o: %.asm GNUmakefile
 # Remove object files and the final executable.
 .PHONY: clean
 clean:
-	rm -rf bin obj
+	rm -rf bin obj iso_root limine-binary *.iso
