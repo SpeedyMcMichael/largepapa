@@ -1,0 +1,31 @@
+#include "isr.h"
+
+static const char *exception_mnemonics [32] = {
+	"#DE: math oopsie (div-by-zero)",
+	"#DB: test fault",
+	"#NMI: oh dear god you're fucked probably",
+	"#BP: 0xCC was touched probably",
+	"#OF: overflow of some kind",
+	"#BR: BOUND range exceeded. how did you GET this?? largepapa doesnt even SUPPORT 386!!!",
+	"#UD: oopsie poopsie your ring 0 code had an invalid opcode :P",
+	"#NM: your CPU cant do good math (no math coprocessor for FPU)",
+	"#DF: either kernel stack ran out of space for your first exception or someone fucked with the GDT/IDT",
+	"coprocessor segment overrun (GOD DAMN IT 386 YOU PERSISTENT BASTARDS)",
+	"#TS: tss did a fucky.",
+	"#NP: either the GDT or IDT did a fucky or the selectors are corrupted :3",
+	"#SS: stack pointer went ouchie (NOT A NEO-NAZI DOGWHISTLE)",
+	"#GP: general protection fault (the fucking walmart of CPU faults lmao)",
+	"#PF: either a place to get the fitness game in or a fault caused by paging fucking up",
+	"",
+	"#MF: muthafucka yo x87 FPU had an error",
+	"#AC: yo lemme line yo shi up",
+	"#MC: is this a pulley, lever, wedge, or computer?",
+	"#XM: somehow, in some way, SIMD fucked up so bad you got sent to hell for it",
+	"#VE: VM exception (basically your VM go bye bye now)",
+	"#CP: OH SHIT ROP/JOP ATTACK",
+	"","","","","","",
+	"#HV: someone tried to inject heroin into your hypervisor (yeesh)",
+	"#VC: uh oh someone tried violating the spirit of confidential computing",
+	"#SX: how the fuck did you get this? shit firmware maybe?",
+	""
+}

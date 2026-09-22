@@ -1,3 +1,5 @@
+# i originally wanted to call this OS bigpapa instead of largepapa but that wouldve gotten me ass sued by van holten for everything i own lmao
+
 # Nuke built-in rules.
 .SUFFIXES:
 
